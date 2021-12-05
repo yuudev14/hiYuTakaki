@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "7b06b282a0de3dc0ae802c39a2d1ec11",
+    "revision": "feac24c6b68f14da5fcd939606281c20",
     "url": "/hiYuTakaki/index.html"
   },
   {
-    "revision": "fff0d600603912300e90",
+    "revision": "bd01b27b19c0b0412df1",
     "url": "/hiYuTakaki/static/css/main.462b2d72.chunk.css"
   },
   {
-    "revision": "eb7ea9a088c18d272ad5",
-    "url": "/hiYuTakaki/static/js/2.2b2f7913.chunk.js"
+    "revision": "440c453c729d56f8afdb",
+    "url": "/hiYuTakaki/static/js/2.58391c1f.chunk.js"
   },
   {
     "revision": "ed961b1d682fddd39f72e5d7dd46c4a2",
-    "url": "/hiYuTakaki/static/js/2.2b2f7913.chunk.js.LICENSE.txt"
+    "url": "/hiYuTakaki/static/js/2.58391c1f.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "fff0d600603912300e90",
-    "url": "/hiYuTakaki/static/js/main.2006937c.chunk.js"
+    "revision": "bd01b27b19c0b0412df1",
+    "url": "/hiYuTakaki/static/js/main.faeee3bc.chunk.js"
   },
   {
     "revision": "b7f1f0fd7f6998746a89",
@@ -248,6 +248,22 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/hiYuTakaki/static/media/Screenshot 2021-12-05 172530.1ecb8923.png"
   },
   {
+    "revision": "e3eee052f086c31c565f008b4aff6193",
+    "url": "/hiYuTakaki/static/media/Screenshot 2021-12-05 183716.e3eee052.png"
+  },
+  {
+    "revision": "e2270dfe45f7e6e15bfd6ee9475acd5f",
+    "url": "/hiYuTakaki/static/media/Screenshot 2021-12-05 183752.e2270dfe.png"
+  },
+  {
+    "revision": "1566e5dd8a330cb5547c2acf32d9416d",
+    "url": "/hiYuTakaki/static/media/Screenshot 2021-12-05 183830.1566e5dd.png"
+  },
+  {
+    "revision": "a48497b1d77e2c422ef448e61fe31043",
+    "url": "/hiYuTakaki/static/media/Screenshot 2021-12-05 183851.a48497b1.png"
+  },
+  {
     "revision": "d61bd8ab9b29abb3f42f87db9afcdf16",
     "url": "/hiYuTakaki/static/media/UShop.d61bd8ab.png"
   },
@@ -356,8 +372,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/hiYuTakaki/static/media/socket.io.288caf89.png"
   },
   {
-    "revision": "3166ca562f3be70bbeceff2d5ca61143",
-    "url": "/hiYuTakaki/static/media/tweetIt.3166ca56.png"
+    "revision": "53a43d48ef0def6bedf49237496fc20a",
+    "url": "/hiYuTakaki/static/media/tweetit.53a43d48.png"
   },
   {
     "revision": "bdef82f2af265555aac6e05bc9b40613",
