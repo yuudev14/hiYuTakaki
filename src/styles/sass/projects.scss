@@ -1,0 +1,59 @@
+@import "./variables.scss";
+@mixin projects {
+  .projects {
+    .project-container {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(auto, max-content);
+      grid-gap: 10px;
+      margin: 20px 0;
+    }
+    .project {
+      min-height: 100%;
+      figure {
+        overflow: hidden;
+        position: relative;
+        height: 100%;
+        width: 100%;
+        border-radius: 10px;
+        cursor: pointer;
+        &:hover {
+          transform: scale(1.05);
+          transition: 0.5s;
+          z-index: 10;
+          .projectName {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba($color: $primaryColor, $alpha: 0.5);
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            border-radius: 10px;
+            h2 {
+              color: $black;
+            }
+          }
+        }
+        img {
+          width: 100%;
+          height: 100%;
+        }
+        .projectName {
+          transition: 0.5s;
+          display: none;
+        }
+      }
+    }
+    .projectModal {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color: rgba($color: $primaryColor, $alpha: 0.7);
+    }
+  }
+}

@@ -1,0 +1,40 @@
+@mixin about {
+  .about {
+    .myProfile {
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+    }
+    .myImage {
+      width: 100%;
+      text-align: center;
+      img {
+        width: 100%;
+        max-width: 150px;
+        border-radius: 100%;
+      }
+      p {
+        color: $primaryColor;
+        font-family: $secondaryFont, sans-serif;
+        text-align: center;
+        margin-top: 10px;
+        border: 1px solid $primaryColor;
+        padding: 5px;
+        border-radius: 20px;
+        transition: 0.5s;
+        cursor: pointer;
+        &:hover {
+          color: $yellow;
+          border: 1px solid $yellow;
+        }
+      }
+    }
+    .me {
+      p {
+        color: white;
+        font-family: $secondaryFont, sans-serif;
+        margin-top: 30px;
+      }
+    }
+  }
+}

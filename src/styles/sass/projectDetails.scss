@@ -1,0 +1,124 @@
+@import "./variables.scss";
+.projectDetailPage {
+  width: 100%;
+  padding-top: 80px;
+  max-width: 1080px;
+  margin: auto !important;
+  .imagePreview {
+    position: fixed;
+    max-width: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba($color: black, $alpha: 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+      max-height: 80%;
+      max-width: 90%;
+      border-radius: 10px;
+    }
+    i {
+      position: absolute;
+      top: 70px;
+      right: 20px;
+      color: rgb(255, 100, 100);
+      font-size: 2em;
+      cursor: pointer;
+      &:hover {
+        transform: scale(1.1);
+        transition: 0.5s;
+      }
+    }
+  }
+  .projectInfo {
+    img {
+      width: 100%;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+    p {
+      text-align: justify;
+    }
+    .role {
+      // list-style-type: none;
+      margin-top: 10px;
+      margin-left: 20px;
+    }
+    .btns {
+      display: flex;
+      margin-top: 10px;
+      grid-gap: 10px;
+      a {
+        flex-grow: 1;
+        button {
+          width: 100%;
+          outline: none;
+          border: 1px solid $primaryColor;
+          color: $primaryColor;
+          font-weight: bolder;
+          padding: 5px;
+          border-radius: 10px;
+          background-color: transparent;
+          cursor: pointer;
+        }
+      }
+    }
+    h1 {
+      margin-top: 10px;
+    }
+    .techStack {
+      list-style-type: none;
+      margin-top: 10px;
+      display: flex;
+      flex-wrap: wrap;
+      grid-gap: 10px;
+      justify-content: center;
+      li {
+        background-color: $primaryColor;
+        padding: 0 5px;
+        border-radius: 5px;
+        font-size: 0.9em;
+        color: $black;
+      }
+    }
+  }
+  .projectGallery {
+    .galleryGrid {
+      column-count: 2;
+      grid-gap: 10px;
+      img {
+        margin-top: 10px;
+        width: 100%;
+        border-radius: 10px;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .projectDetailPage {
+    display: flex;
+    justify-content: flex-end;
+    height: 100vh;
+    .projectInfo {
+      width: 40%;
+      margin: 0 !important;
+    }
+    .projectGallery {
+      width: 60%;
+      height: 100%;
+      overflow-y: auto;
+    }
+    .projectGallery::-webkit-scrollbar {
+      width: 5px;
+    }
+
+    .projectGallery::-webkit-scrollbar-thumb {
+      background: #16bbac;
+    }
+  }
+}

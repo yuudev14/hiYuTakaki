@@ -1,0 +1,194 @@
+@import "variables";
+@import "./projects.scss";
+@import "./about.scss";
+@import "./contacts.scss";
+@import "./skill.scss";
+
+@mixin main {
+  main {
+    padding-top: 60px;
+    width: 100%;
+    margin: 0;
+    section {
+      max-width: 1080px;
+      width: 100%;
+      margin: auto;
+      padding: 20px;
+      h1 {
+        color: $primaryColor;
+        font-family: $primaryFont, sans-serif;
+        text-transform: capitalize;
+      }
+      h3 {
+        color: $yellow;
+        font-family: $primaryFont, sans-serif;
+        text-transform: capitalize;
+        text-align: center;
+      }
+      .section-content {
+        width: 90%;
+        margin: auto;
+        margin-top: 50px;
+      }
+    }
+    .banner {
+      height: 100vh;
+      position: relative;
+      z-index: 9;
+      overflow: hidden;
+      max-width: none;
+      canvas {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -2;
+      }
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        height: 100%;
+        z-index: -1;
+        opacity: 0.3;
+      }
+
+      h1 {
+        font-size: 5.5vw;
+        color: white;
+      }
+      .second {
+        color: rgb(255, 255, 255);
+      }
+      .third {
+        color: $yellow;
+      }
+      .banner-content {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        width: 80%;
+        margin: auto;
+        .my-info {
+          width: 50%;
+          border-right: 1px solid $grey;
+          padding-right: 20px;
+          margin-right: 20px;
+
+          transition: 2s;
+        }
+        @keyframes banner-content {
+          from {
+            opacity: 0;
+          }
+          to {
+            opacity: 1;
+          }
+        }
+        .my-slogan {
+          width: 50%;
+          flex-grow: 1;
+          h1 {
+            width: max-content;
+            max-width: 100%;
+            color: $yellow;
+          }
+          a {
+            color: white;
+            text-decoration: none;
+          }
+          ul {
+            text-align: center;
+            width: max-content;
+          }
+          li {
+            margin: 5px;
+            &:hover {
+              color: $yellow;
+            }
+          }
+        }
+      }
+
+      .my-info h1 {
+        font-family: $primaryFont, sans-serif;
+        text-align: right;
+      }
+    }
+    @include skills;
+
+    @include projects;
+    @include about;
+    @include contacts;
+  }
+
+  @media only screen and (min-width: 600px) {
+    main {
+      .banner {
+        h1 {
+          font-size: 2em;
+        }
+        img {
+          height: 100%;
+          width: inherit;
+        }
+        .my-slogan {
+          h1 {
+            max-width: 70% !important;
+          }
+        }
+      }
+      .projects {
+        .project-container {
+          grid-template-columns: repeat(2, 1fr) !important;
+          grid-gap: 20px;
+        }
+      }
+      .about {
+        .myProfile {
+          flex-direction: row;
+          justify-content: space-between;
+          width: 100%;
+          margin: auto;
+        }
+        .myImage {
+          width: 25%;
+
+          img {
+            width: 100%;
+            max-width: 150px;
+          }
+          a {
+            text-decoration: none;
+            color: white;
+          }
+        }
+        .me {
+          width: 70%;
+          p {
+            color: white;
+            font-family: $secondaryFont, sans-serif;
+            margin-top: 10px;
+          }
+        }
+      }
+      .contact {
+        .section-content {
+          display: flex;
+          flex-direction: row-reverse;
+          align-items: flex-start;
+          form {
+            width: 60%;
+          }
+          .contact-container {
+            width: 40%;
+            height: 100%;
+          }
+        }
+        .socialDetails {
+          margin-top: 0;
+        }
+      }
+    }
+  }
+}

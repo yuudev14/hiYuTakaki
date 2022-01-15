@@ -1,0 +1,7 @@
+@import "header";
+@import "main";
+
+.App {
+  @include header;
+  @include main;
+}

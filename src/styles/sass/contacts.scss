@@ -1,0 +1,92 @@
+@mixin contacts {
+  .contact {
+    padding-bottom: 50px;
+    h2 {
+      margin-top: -50px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      grid-gap: 10px;
+      .success {
+        color: rgb(153, 255, 0);
+      }
+      .failed {
+        color: rgb(255, 56, 56);
+      }
+      input[type="email"],
+      textarea {
+        width: 100%;
+        padding: 10px;
+        border-radius: 10px;
+        border: 1px solid $black;
+        font-family: $secondaryFont;
+        &:focus {
+          border: 1px solid $primaryColor;
+          outline: 1px solid $primaryColor;
+        }
+      }
+      textarea {
+        height: 300px;
+        resize: none;
+      }
+      input[type="submit"] {
+        width: 200px;
+        padding: 5px;
+        border: none;
+        outline: none;
+        background-color: $primaryColor;
+        color: $black;
+        border-radius: 10px;
+        font-weight: bolder;
+      }
+    }
+    .contact-container {
+      display: flex;
+      flex-direction: column;
+      width: 90%;
+      height: 100%;
+      margin-top: 20px;
+      justify-content: space-between;
+      ul {
+        list-style-type: none;
+      }
+      li {
+        display: flex;
+      }
+      p {
+        margin-left: 10px;
+      }
+      div {
+        margin: auto;
+      }
+    }
+    .contactDetails {
+      width: 90%;
+      i {
+        color: $primaryColor;
+      }
+    }
+    .socialDetails {
+      margin-top: 30px !important;
+      width: 90%;
+      ul {
+        display: flex;
+        width: 100%;
+      }
+      li {
+        margin: 10px;
+        &:hover {
+          color: $yellow;
+        }
+      }
+      a {
+        text-decoration: none;
+        color: white;
+      }
+    }
+  }
+}

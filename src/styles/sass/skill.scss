@@ -1,0 +1,41 @@
+@mixin skills {
+  .skills {
+    .skillContainer {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      img {
+        height: 50px;
+        margin: 10px;
+      }
+      img:nth-of-type(odd) {
+        animation: bounce 5s infinite both;
+      }
+      img:nth-of-type(even) {
+        animation: bounceReverse 5s infinite both;
+      }
+    }
+    @keyframes bounce {
+      0% {
+        transform: translateY(5px);
+      }
+      50% {
+        transform: translateY(-5px);
+      }
+      100% {
+        transform: translateY(5px);
+      }
+    }
+    @keyframes bounceReverse {
+      0% {
+        transform: translateY(-5px);
+      }
+      50% {
+        transform: translateY(5px);
+      }
+      100% {
+        transform: translateY(-5px);
+      }
+    }
+  }
+}
