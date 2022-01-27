@@ -11,7 +11,7 @@ const About = () => {
           <div className="myImage">
             <img src={yu} alt="me" />
             <a
-              href="https://drive.google.com/file/d/1u-p8ZSmxCCvgfuNPI4gruVvZVODVrCoz/view?usp=sharing"
+              href="https://drive.google.com/file/d/1rYvLI3awc-KL4nIwVpPgOqI7KpgjULKF/view?usp=sharing"
               target="_blank">
               <p>View Resume</p>
             </a>
