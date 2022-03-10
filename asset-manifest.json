@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/hiYuTakaki/static/css/main.1d95811e.css",
-    "main.js": "/hiYuTakaki/static/js/main.0031d14b.js",
+    "main.js": "/hiYuTakaki/static/js/main.7d799173.js",
     "static/js/787.db9b214f.chunk.js": "/hiYuTakaki/static/js/787.db9b214f.chunk.js",
     "static/media/kotlin.png": "/hiYuTakaki/static/media/kotlin.ea1f30beabffbf71d58c.png",
     "static/media/Screenshot 2021-12-04 195751.png": "/hiYuTakaki/static/media/Screenshot 2021-12-04 195751.79c9c593ae9818cefccb.png",
@@ -96,11 +96,11 @@
     "static/media/socket.io.png": "/hiYuTakaki/static/media/socket.io.07be0531efc928c7278d.png",
     "index.html": "/hiYuTakaki/index.html",
     "main.1d95811e.css.map": "/hiYuTakaki/static/css/main.1d95811e.css.map",
-    "main.0031d14b.js.map": "/hiYuTakaki/static/js/main.0031d14b.js.map",
+    "main.7d799173.js.map": "/hiYuTakaki/static/js/main.7d799173.js.map",
     "787.db9b214f.chunk.js.map": "/hiYuTakaki/static/js/787.db9b214f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1d95811e.css",
-    "static/js/main.0031d14b.js"
+    "static/js/main.7d799173.js"
   ]
 }
