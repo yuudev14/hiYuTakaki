@@ -1,6 +1,6 @@
 import React from "react";
 import yu from "../assets/yu.jpg";
-const { REACT_APP_RESUME } = process.env;
+
 const About = () => {
   return (
     <section className="about" id="about">
@@ -11,7 +11,7 @@ const About = () => {
           <div className="myImage">
             <img src={yu} alt="me" />
             <a
-              href={REACT_APP_RESUME}
+              href='https://drive.google.com/file/d/1rCRE2ILt4RLTk2SHLwhiQW6AjDmB7YCy/view'
               target="_blank">
               <p>View Resume</p>
             </a>
