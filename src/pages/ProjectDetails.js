@@ -4,6 +4,8 @@ import projectList from "../projects";
 import Masonry from 'react-masonry-css'
 import "../styles/sass/projectDetails.scss";
 import "../styles/sass/masonry.scss";
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 const ProjectDetails = () => {
   const { name } = useParams();
@@ -39,7 +41,8 @@ const ProjectDetails = () => {
       <section className="projectInfo">
         <h1>Project Info</h1>
 
-        <img
+        <LazyLoadImage
+          effect="blur"
           src={project.mainPic && require(`../assets/${project.mainPic}`)}
           alt="mainPic"
         />
@@ -77,7 +80,8 @@ const ProjectDetails = () => {
           columnClassName="my-masonry-grid_column">
           {/* array of JSX items */}
           {projectImages.map((proj) => (
-            <img
+            <LazyLoadImage
+              effect="blur"
               onClick={() => setPreviewImg(proj)}
               src={proj}
               alt="projects"

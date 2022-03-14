@@ -1,5 +1,6 @@
 import React, { useRef, useEffect } from "react";
 import city from "../assets/city.png";
+
 const Banner = () => {
   const canvasRef = useRef(null);
   useEffect(() => {

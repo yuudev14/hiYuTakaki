@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from "react";
+import 'react-lazy-load-image-component/src/effects/blur.css';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const Skills = () => {
   const [strongSkills, setStrongSkills] = useState([]);
@@ -28,13 +30,14 @@ const Skills = () => {
       <h3>Strong</h3>
       <div className="skillContainer">
         {strongSkills.map((skill) => (
-          <img src={skill} alt="skill" key={skill} />
+          <LazyLoadImage effect="blur" src={skill} alt="skill" key={skill} />
         ))}
       </div>
       <h3>Experienced</h3>
       <div className="skillContainer">
         {experiencedSkills.map((skill) => (
-          <img src={skill} alt="skill" key={skill} />
+
+          <LazyLoadImage effect="blur" src={skill} alt="skill" key={skill} />
         ))}
       </div>
     </section>
