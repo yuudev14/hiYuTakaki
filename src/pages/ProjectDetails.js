@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import projectList from "../projects";
+import Masonry from 'react-masonry-css'
 import "../styles/sass/projectDetails.scss";
+import "../styles/sass/masonry.scss";
 
 const ProjectDetails = () => {
   const { name } = useParams();
@@ -66,7 +68,14 @@ const ProjectDetails = () => {
 
       <section className="projectGallery">
         <h1>Gallery</h1>
-        <div className="galleryGrid">
+        <Masonry
+          breakpointCols={{
+            default : 3,
+            600: 2,
+          }}
+          className="my-masonry-grid"
+          columnClassName="my-masonry-grid_column">
+          {/* array of JSX items */}
           {projectImages.map((proj) => (
             <img
               onClick={() => setPreviewImg(proj)}
@@ -74,7 +83,8 @@ const ProjectDetails = () => {
               alt="projects"
             />
           ))}
-        </div>
+
+        </Masonry>
       </section>
     </main>
   );
