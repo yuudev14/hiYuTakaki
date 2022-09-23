@@ -190,33 +190,33 @@ module.exports = {
         "Build the authentication feature using Passport.js",
       ],
     },
-    {
-      name: "tweetIt",
-      mainPic: "tweetit.png",
-      imageFolder: require.context(
-        "./assets/tweetit",
-        true,
-        /\.(png|jpe?g|svg)$/
-      ),
-      description:
-        "Developed a twitter clone that lets you post a tweet, view a tweet, comment in a tweet and also find friends to add to see their posts",
-      github_url: "https://github.com/YuTakaki/tweetIt",
-      app_url: "https://tweet-it-yu.herokuapp.com/#/",
-      stack: [
-        "React",
-        "MongoDB",
-        "Node.js",
-        "Express.js",
-        "Passport.js",
-        "SASS",
-        "Cloudinary",
-      ],
-      roles: [
-        "Developed the tweet post functionality of the app by uploading the pictures in Cloudinary and storing the post itself in MongoDB",
-        "Designed overall design of the app that is compatible in mobile, desktop and tablet using SASS",
-        "Engineered a private route component in React based on the user authenticatication with the use of Passport.js",
-      ],
-    },
+    // {
+    //   name: "tweetIt",
+    //   mainPic: "tweetit.png",
+    //   imageFolder: require.context(
+    //     "./assets/tweetit",
+    //     true,
+    //     /\.(png|jpe?g|svg)$/
+    //   ),
+    //   description:
+    //     "Developed a twitter clone that lets you post a tweet, view a tweet, comment in a tweet and also find friends to add to see their posts",
+    //   github_url: "https://github.com/YuTakaki/tweetIt",
+    //   app_url: "https://tweet-it-yu.herokuapp.com/#/",
+    //   stack: [
+    //     "React",
+    //     "MongoDB",
+    //     "Node.js",
+    //     "Express.js",
+    //     "Passport.js",
+    //     "SASS",
+    //     "Cloudinary",
+    //   ],
+    //   roles: [
+    //     "Developed the tweet post functionality of the app by uploading the pictures in Cloudinary and storing the post itself in MongoDB",
+    //     "Designed overall design of the app that is compatible in mobile, desktop and tablet using SASS",
+    //     "Engineered a private route component in React based on the user authenticatication with the use of Passport.js",
+    //   ],
+    // },
 
     // {
     //   name: "Popcorn Time",
