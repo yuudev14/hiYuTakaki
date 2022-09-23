@@ -10,9 +10,7 @@ const About = () => {
         <div className="myProfile">
           <div className="myImage">
             <img src={yu} alt="me" />
-            <a
-              href='https://drive.google.com/file/d/1rCRE2ILt4RLTk2SHLwhiQW6AjDmB7YCy/view'
-              target="_blank">
+            <a href={process.env.REACT_APP_RESUME} target="_blank">
               <p>View Resume</p>
             </a>
           </div>
