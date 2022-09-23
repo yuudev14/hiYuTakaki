@@ -1,4 +1,12 @@
 import React, { useRef, useEffect } from "react";
+import Typewriter from "typewriter-effect";
+import {
+  IoLogoJavascript,
+  IoLogoHtml5,
+  IoLogoCss3,
+  IoLogoPython,
+} from "react-icons/io";
+import { SiTypescript } from "react-icons/si";
 import city from "../assets/city.png";
 
 const Banner = () => {
@@ -57,15 +65,15 @@ const Banner = () => {
     }
     let circles = [];
     let colors = [
-      "rgba(44, 44, 44, 0.5)",
-      "rgba(15, 15, 15, 0.5)",
-      "rgba(75, 75, 75, 0.5)",
-      "rgba(95, 95, 95, 0.5)",
+      "rgba(73, 88, 105, 0.3)",
+      // "rgba(73, 83, 105, 0.5)",
+      // "rgba(73, 83, 98, 0.5)",
+      // "rgba(73, 88, 98, 0.5)",
     ];
 
     const create = () => {
       for (let i = 0; i < 10; i++) {
-        var radius = width * 0.2;
+        var radius = 500 * 0.2;
         var x = Math.random() * width;
         var y = Math.random() * height;
 
@@ -93,31 +101,55 @@ const Banner = () => {
 
   return (
     <section className="banner" id="home">
-      <div className="banner-content">
-        <div className="my-info">
-          <h1 className="first">Yu</h1>
-          <h1 className="second">Takaki</h1>
-          <h1 className="third">Software Engineer</h1>
-        </div>
-        <div className="my-slogan">
-          <h1 className="fourth">Lets Work Together As A Team</h1>
-          <ul>
-            <a href="https://www.facebook.com/yuyu.takaks/" target="_blank">
-              <li className="fa fa-facebook"></li>
-            </a>
-            <a href="https://twitter.com/takakiyuuu" target="_blank">
-              <li className="fa fa-twitter"></li>
-            </a>
-            <a href="https://github.com/YuTakaki" target="_blank">
-              <li className="fa fa-github"></li>
-            </a>
-            <a href="https://www.linkedin.com/in/takakiiiyuuu/" target="_blank">
-              <li className="fa fa-linkedin"></li>
-            </a>
-          </ul>
+      <div className="fontSize flex flex-col gap-3 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+        <code className="text-lime-700 w-max">
+          {"// MD5=834b62e8be515ca3d904e6b4e313fe49"}
+        </code>
+        <code>
+          <span className="text-sky-700">const</span>{" "}
+          <span className="text-yellow-500">Introduction</span> ={" "}
+          <span className="text-yellow-300">{"()"}</span>
+          <span className="text-sky-700">{" ="}</span>
+          <span className="text-yellow-300">{" {"}</span>
+        </code>
+        <code className="flex flex-col gap-3 ml-[1em]">
+          <code>
+            <span className="text-sky-700">const </span>
+            <span className="text-yellow-500">fullName</span> ={" "}
+            <span className="text-amber-700">"Yu Takaki"</span>;
+          </code>
+          <code className="flex">
+            <span className="text-sky-700">let </span>{" "}
+            <span className="text-yellow-500 ml-[.5em] mr-[.5em]">
+              whatAmI{" "}
+            </span>{" "}
+            {" = "}
+            <span className="text-amber-700 ml-[.5em]">
+              <Typewriter
+                options={{
+                  strings: [
+                    '"Developer"',
+                    '"Programmer"',
+                    '"Software Engineer"',
+                  ],
+                  autoStart: true,
+                  loop: true,
+                }}
+              />
+            </span>
+          </code>
+        </code>
+        <code>
+          <span className="text-yellow-300">{"};"}</span>
+        </code>
+        <div className="flex gap-7 text-3xl items-center">
+          <IoLogoJavascript />
+          <IoLogoHtml5 />
+          <IoLogoCss3 />
+          <IoLogoPython />
+          <SiTypescript />
         </div>
       </div>
-      <img src={city} alt="banner" />
       <canvas ref={canvasRef}></canvas>
     </section>
   );
