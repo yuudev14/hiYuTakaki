@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import projectList from "../projects";
-import Masonry from 'react-masonry-css'
+import Masonry from "react-masonry-css";
 import "../styles/sass/projectDetails.scss";
 import "../styles/sass/masonry.scss";
-import { LazyLoadImage } from 'react-lazy-load-image-component';
-import 'react-lazy-load-image-component/src/effects/blur.css';
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 const ProjectDetails = () => {
   const { name } = useParams();
@@ -33,7 +33,7 @@ const ProjectDetails = () => {
   return (
     <main className="projectDetailPage">
       {previewImg && (
-        <section className="imagePreview">
+        <section className="imagePreview z-[200]">
           <i className="fa fa-close" onClick={() => setPreviewImg()}></i>
           <img src={previewImg} alt="preview" />
         </section>
@@ -73,7 +73,7 @@ const ProjectDetails = () => {
         <h1>Gallery</h1>
         <Masonry
           breakpointCols={{
-            default : 3,
+            default: 3,
             600: 2,
           }}
           className="my-masonry-grid"
@@ -87,7 +87,6 @@ const ProjectDetails = () => {
               alt="projects"
             />
           ))}
-
         </Masonry>
       </section>
     </main>
