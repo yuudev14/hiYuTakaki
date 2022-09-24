@@ -1,10 +1,11 @@
-import React, { useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import logo from "../assets/logo.png";
 
 const Header = () => {
   const navigate = useNavigate();
+  const headerRef = useRef();
   const [display, setDisplay] = useState(false);
   const showOptions = () => {
     document.querySelector("header ul").classList.toggle("displayNav");
@@ -22,8 +23,25 @@ const Header = () => {
     setDisplay(false);
   };
 
+  const headerStyleEffect = () => {
+    const md5Name = document.getElementById("md5_name");
+    if (md5Name) {
+      const top = md5Name.getBoundingClientRect().top;
+      if (top - headerRef.current.offsetHeight < 0) {
+        headerRef.current.classList.add("bg-[#191e24]");
+      } else {
+        headerRef.current.classList.remove("bg-[#191e24]");
+      }
+    }
+  };
+
+  useEffect(() => {
+    headerStyleEffect();
+    window.onscroll = headerStyleEffect;
+  }, []);
+
   return (
-    <header>
+    <header ref={headerRef}>
       <nav>
         <Link to="/" onClick={() => closeOption("#home")}>
           <LazyLoadImage

@@ -102,7 +102,7 @@ const Banner = () => {
   return (
     <section className="banner" id="home">
       <div className="fontSize flex flex-col gap-3 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-        <code className="text-lime-700 w-max">
+        <code className="text-lime-700 w-max" id="md5_name">
           {"// MD5=834b62e8be515ca3d904e6b4e313fe49"}
         </code>
         <code>
