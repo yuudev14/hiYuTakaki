@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import logo from "../assets/logo.png";
 
 const Header = () => {
   const navigate = useNavigate();
@@ -24,7 +26,13 @@ const Header = () => {
     <header>
       <nav>
         <Link to="/" onClick={() => closeOption("#home")}>
-          <h1>YT</h1>
+          <LazyLoadImage
+            effect="blur"
+            src={logo}
+            alt="preview"
+            loading="lazy"
+            className="w-[50px]"
+          />
         </Link>
 
         <ul>
