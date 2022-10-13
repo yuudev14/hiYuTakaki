@@ -4,6 +4,7 @@ import Header from "./components/header";
 import Home from "./pages/Home";
 import ProjectDetails from "./pages/ProjectDetails";
 import "react-lazy-load-image-component/src/effects/blur.css";
+import Bot from "./components/Bot";
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
           <Route path="/project/:name" element={<ProjectDetails />} />
         </Routes>
       </Router>
+      <Bot />
     </div>
   );
 };
