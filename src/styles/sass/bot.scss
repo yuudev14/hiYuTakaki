@@ -1,0 +1,65 @@
+.bot-container {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 10;
+  .bot-msg-box {
+    transition: 0.1s;
+    background-color: white;
+  }
+
+  .active {
+    border-radius: 10px;
+    overflow: hidden;
+    height: 500px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    .bot-header {
+      background-color: $primaryColor;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      svg {
+        cursor: pointer;
+      }
+    }
+    .bot-text-content {
+      flex: 1;
+    }
+    .bot-textbox-container {
+      color: $primaryColor;
+      height: 60px;
+      overflow: auto;
+      border-top-width: 2px;
+      border-color: #ceced2;
+      p {
+        padding: 2px 4px;
+        outline: none;
+      }
+    }
+  }
+
+  .inactive {
+    border-radius: 100px;
+    overflow: hidden;
+    &:hover {
+      transform: scale(1.1);
+    }
+    .bot-header {
+      background-color: $primaryColor;
+      padding: 20px;
+      cursor: pointer;
+      .bot-minimize {
+        display: none;
+      }
+    }
+    .bot-text-content {
+      display: none;
+    }
+    .bot-textbox-container {
+      display: none;
+    }
+  }
+}

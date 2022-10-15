@@ -4,4 +4,5 @@
 .App {
   @include header;
   @include main;
+  @import "bot";
 }
