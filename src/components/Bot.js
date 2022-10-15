@@ -1,3 +1,4 @@
+import axios from "axios";
 import React, { useEffect, useRef, useState } from "react";
 import { AiFillRobot } from "react-icons/ai";
 import { TbArrowsMinimize } from "react-icons/tb";
@@ -23,20 +24,35 @@ const Bot = () => {
     botBtnRef.current.classList.add("inactive");
   };
 
+  const sendMessage = async () => {
+    setBotMsgs([
+      ...botMsgs,
+      {
+        bot: false,
+        msg: inputMsg,
+      },
+    ]);
+    // http://localhost:8080/api/bot/
+    setInputMsg("");
+    msgRef.current.textContent = "";
+    const res = await axios.post("http://localhost:8080/api/bot/", {
+      msg: inputMsg,
+    });
+    setBotMsgs((msg) => [
+      ...msg,
+      {
+        bot: true,
+        msg: res.data.msg,
+      },
+    ]);
+  };
+
   const inputHandler = (e) => {
     const textcontent = e.target.textContent.toString();
     if (textcontent !== inputMsg) {
       setInputMsg(textcontent);
     } else {
-      setBotMsgs([
-        ...botMsgs,
-        {
-          bot: false,
-          msg: inputMsg,
-        },
-      ]);
-      setInputMsg("");
-      msgRef.current.textContent = "";
+      sendMessage();
     }
   };
   return (
