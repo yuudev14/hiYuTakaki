@@ -26,10 +26,30 @@
       }
     }
     .bot-text-content {
+      margin: 2px 0;
       flex: 1;
+      color: $black;
+      padding: 4px 8px;
+      overflow: auto;
+      div {
+        margin-top: 4px;
+        padding: 4px 8px;
+        max-width: 70%;
+        width: max-content;
+        border-radius: 4px;
+      }
+      .isBot {
+        background-color: $primaryColor;
+        color: white;
+      }
+
+      .notBot {
+        margin-left: auto;
+        background-color: $yellow;
+      }
     }
     .bot-textbox-container {
-      color: $primaryColor;
+      color: $black;
       height: 60px;
       overflow: auto;
       border-top-width: 2px;
