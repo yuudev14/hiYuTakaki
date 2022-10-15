@@ -51,16 +51,17 @@ const Bot = () => {
     const textcontent = e.target.textContent.toString();
     if (textcontent !== inputMsg) {
       setInputMsg(textcontent);
-    } else {
+    } else if (textcontent !== "") {
       sendMessage();
+    } else {
+      msgRef.current.textContent = "";
     }
   };
   return (
-    <div className="bot-container">
+    <div className="bot-container inactive " ref={botBtnRef}>
       <div
-        ref={botBtnRef}
         onClick={openBotHandler}
-        className="bot-msg-box inactive shadow-lg border-2 border-zinc-200">
+        className="bot-msg-box shadow-lg border-2 border-zinc-200">
         <div className="bot-header">
           <AiFillRobot size={40} className="bot-icon" />
           <TbArrowsMinimize

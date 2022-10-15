@@ -4,69 +4,76 @@
   right: 30px;
   z-index: 10;
   .bot-msg-box {
-    transition: 0.1s;
-    background-color: white;
-  }
-
-  .active {
     border-radius: 10px;
     overflow: hidden;
-    height: 500px;
-    width: 400px;
+    transition: 0.1s;
+    background-color: white;
     display: flex;
     flex-direction: column;
-    .bot-header {
-      background-color: $primaryColor;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 20px;
-      svg {
-        cursor: pointer;
-      }
-    }
-    .bot-text-content {
-      margin: 2px 0;
-      flex: 1;
-      color: $black;
-      padding: 4px 8px;
-      overflow: auto;
-      div {
-        margin-top: 4px;
-        padding: 4px 8px;
-        max-width: 70%;
-        width: max-content;
-        border-radius: 4px;
-      }
-      .isBot {
-        background-color: $primaryColor;
-        color: white;
-      }
+    height: 100%;
+  }
+}
+.active {
+  height: 80%;
+  margin-left: auto;
+  margin-top: auto;
+  width: 90%;
 
-      .notBot {
-        margin-left: auto;
-        background-color: $yellow;
-      }
-    }
-    .bot-textbox-container {
-      color: $black;
-      height: 60px;
-      overflow: auto;
-      border-top-width: 2px;
-      border-color: #ceced2;
-      p {
-        padding: 2px 4px;
-        outline: none;
-      }
+  .bot-header {
+    background-color: $primaryColor;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    svg {
+      cursor: pointer;
     }
   }
+  .bot-text-content {
+    margin: 2px 0;
+    flex: 1;
+    color: $black;
+    padding: 4px 8px;
+    overflow: auto;
+    div {
+      margin-top: 4px;
+      padding: 4px 8px;
+      max-width: 70%;
+      width: max-content;
+      border-radius: 4px;
+    }
+    .isBot {
+      background-color: $primaryColor;
+      color: white;
+    }
 
-  .inactive {
+    .notBot {
+      margin-left: auto;
+      background-color: $yellow;
+    }
+  }
+  .bot-textbox-container {
+    color: $black;
+    height: 60px;
+    overflow: auto;
+    border-top-width: 2px;
+    border-color: #ceced2;
+    p {
+      padding: 2px 4px;
+      outline: none;
+    }
+  }
+}
+
+.inactive {
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  .bot-msg-box {
     border-radius: 100px;
     overflow: hidden;
-    &:hover {
-      transform: scale(1.1);
-    }
+    height: max-content;
     .bot-header {
       background-color: $primaryColor;
       padding: 20px;
@@ -81,5 +88,11 @@
     .bot-textbox-container {
       display: none;
     }
+  }
+}
+
+@media only screen and (min-width: 460px) {
+  .bot-container {
+    max-width: 400px;
   }
 }
