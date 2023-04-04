@@ -1,9 +1,8 @@
 {
   "files": {
-    "main.css": "/hiYuTakaki/static/css/main.21f17b6a.css",
-    "main.js": "/hiYuTakaki/static/js/main.e23fa904.js",
+    "main.css": "/hiYuTakaki/static/css/main.1e72550e.css",
+    "main.js": "/hiYuTakaki/static/js/main.ed3d3666.js",
     "static/js/496.7202eab9.chunk.js": "/hiYuTakaki/static/js/496.7202eab9.chunk.js",
-    "static/media/kotlin.png": "/hiYuTakaki/static/media/kotlin.ea1f30beabffbf71d58c.png",
     "static/media/Screenshot 2021-12-04 195751.png": "/hiYuTakaki/static/media/Screenshot 2021-12-04 195751.79c9c593ae9818cefccb.png",
     "static/media/city.png": "/hiYuTakaki/static/media/city.cabcbb54e37414127993.png",
     "static/media/Screenshot 2021-12-04 195728.png": "/hiYuTakaki/static/media/Screenshot 2021-12-04 195728.1f271f53c8b926f00050.png",
@@ -46,10 +45,8 @@
     "static/media/Screenshot 2021-12-04 200213.png": "/hiYuTakaki/static/media/Screenshot 2021-12-04 200213.36598ac75ae6c4e6df22.png",
     "static/media/Screenshot 2021-12-05 171022.png": "/hiYuTakaki/static/media/Screenshot 2021-12-05 171022.0b34f418059788db5f8f.png",
     "static/media/Screenshot 2021-12-05 161124.png": "/hiYuTakaki/static/media/Screenshot 2021-12-05 161124.bfc3ab2b9710c2c6cf42.png",
-    "static/media/androidStudio.png": "/hiYuTakaki/static/media/androidStudio.2a12492fc9378feb6d14.png",
     "static/media/Screenshot 2021-11-28 163645.png": "/hiYuTakaki/static/media/Screenshot 2021-11-28 163645.119476778fec2bf4de45.png",
     "static/media/Screenshot 2021-12-05 164432.png": "/hiYuTakaki/static/media/Screenshot 2021-12-05 164432.b57a4ecb2afb981b2356.png",
-    "static/media/firebase.png": "/hiYuTakaki/static/media/firebase.bff5748e0ad72bf0c427.png",
     "static/media/mongodb.png": "/hiYuTakaki/static/media/mongodb.2f81ed7ec1fd818da1b5.png",
     "static/media/logo.png": "/hiYuTakaki/static/media/logo.2f625ad65743949e7845.png",
     "static/media/Screenshot 2021-12-05 164412.png": "/hiYuTakaki/static/media/Screenshot 2021-12-05 164412.ad5fdc334d50704eebcf.png",
@@ -96,12 +93,12 @@
     "static/media/pngwing.com (5).png": "/hiYuTakaki/static/media/pngwing.com (5).bb13ebd9561a6ee645c2.png",
     "static/media/socket.io.png": "/hiYuTakaki/static/media/socket.io.07be0531efc928c7278d.png",
     "index.html": "/hiYuTakaki/index.html",
-    "main.21f17b6a.css.map": "/hiYuTakaki/static/css/main.21f17b6a.css.map",
-    "main.e23fa904.js.map": "/hiYuTakaki/static/js/main.e23fa904.js.map",
+    "main.1e72550e.css.map": "/hiYuTakaki/static/css/main.1e72550e.css.map",
+    "main.ed3d3666.js.map": "/hiYuTakaki/static/js/main.ed3d3666.js.map",
     "496.7202eab9.chunk.js.map": "/hiYuTakaki/static/js/496.7202eab9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.21f17b6a.css",
-    "static/js/main.e23fa904.js"
+    "static/css/main.1e72550e.css",
+    "static/js/main.ed3d3666.js"
   ]
 }
