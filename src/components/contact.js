@@ -48,7 +48,7 @@ const Contact = () => {
               </li>
               <li>
                 <i className="fa fa-envelope"></i>
-                <p>takakiiiyuuu@gmail.com</p>
+                <p>takaki.yu.dev@gmail.com</p>
               </li>
             </ul>
           </div>
