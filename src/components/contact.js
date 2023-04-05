@@ -61,7 +61,7 @@ const Contact = () => {
               <a href="https://twitter.com/takakiyuuu" target="_blank">
                 <li className="fa fa-twitter"></li>
               </a>
-              <a href="https://github.com/YuTakaki" target="_blank">
+              <a href="https://github.com/yuudev14" target="_blank">
                 <li className="fa fa-github"></li>
               </a>
               <a
